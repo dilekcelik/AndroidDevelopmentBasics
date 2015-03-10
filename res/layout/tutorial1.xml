@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+     >
+    <TextView
+        android:id="@+id/tvStyle"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Style" />
+
+    <TextView
+        android:id="@+id/tvGravity"
+        android:gravity="center"
+          android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Gravity"
+        android:layout_weight="1" />
+	</LinearLayout> 
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+<RadioGroup android:id="@+id/rgStyle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_weight="1" >"
+    <RadioButton
+        android:id="@+id/rbNormal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Normal" />
+     <RadioButton
+        android:id="@+id/rbItalic" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Italic" />
+     <RadioButton
+        android:id="@+id/rbBold" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Bold" />
+</RadioGroup>
+
+<RadioGroup android:id="@+id/rgGravity" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_weight="1" >
+     <RadioButton
+        android:id="@+id/rbLeft" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Left" />
+     <RadioButton
+        android:id="@+id/rbCenter" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Center" />
+      <RadioButton
+        android:id="@+id/rbRight" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Right" />
+</RadioGroup>
+      
+      
+</LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvChange"
+       	android:gravity="center"
+       	android:textSize="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type in Text and press the button" />
+
+    <Button
+        android:id="@+id/bGenerate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate" />
+
+</LinearLayout>
